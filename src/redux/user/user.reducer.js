@@ -1,4 +1,3 @@
-import { useParams } from 'react-router-dom';
 import { UserActionTypes } from './user.types';
 const INTIAL_STATE = {
   currentUser: null,
