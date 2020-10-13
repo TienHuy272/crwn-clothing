@@ -1,12 +1,12 @@
 import { useParams } from 'react-router-dom';
-
+import { UserActionTypes } from './user.types';
 const INTIAL_STATE = {
   currentUser: null,
 };
 
 const userReducer = (state = INTIAL_STATE, action) => {
   switch (action.type) {
-    case 'SET_CURRENT_USER':
+    case UserActionTypes.SET_CURRENT_USER:
       return {
         ...state,
         currentUser: action.payload,
